@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Culinary Connisseurs — Caterer Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <img src="images/food-platter.jpg" class="platter" alt="Food Platter">
+    <img src="images/wine-glasses.jpg" class="wine" alt="Wine Glasses">
+    <img src="images/utensils.png" class="utensils" alt="Kitchen Utensils">
+    <img src="images/table-decor.jpg" class="decor" alt="Table Decoration">
+
+    <main class="page">
+      <form class="card" action="#" method="post" id="ccLoginForm" autocomplete="off">
+        <h1 class="title">Culinary Connisseurs</h1>
+        <p class="subtitle">Caterer Login</p>
+
+        <fieldset class="grid">
+          <legend class="sr-only">Caterer Information</legend>
+
+          <label for="firstName">First Name
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+          </label>
+
+          <label for="lastName">Last Name
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+          </label>
+
+          <label for="password">Password
+            <input type="password" id="password" name="password" placeholder="Password">
+          </label>
+
+          <label for="phoneExt">Phone (with ext)
+            <input type="text" id="phoneExt" name="phoneExt" placeholder="555-123-4567 ext 123">
+          </label>
+
+          <label for="catererId">Caterer ID
+            <input type="text" id="catererId" name="catererId" placeholder="4-digit ID">
+          </label>
+
+          <label for="email">Email
+            <input type="text" id="email" name="email" placeholder="name@example.com">
+          </label>
+
+          <label class="checkbox-row" for="emailConfirm">
+            <input type="checkbox" id="emailConfirm" name="emailConfirm">Email confirmation requested
+          </label>
+
+          <label for="transaction">Select a Transaction
+            <select id="transaction" name="transaction">
+              <option value="">-- Choose one --</option>
+              <option value="search">Search Caterer Records</option>
+              <option value="book">Book Client Catering</option>
+              <option value="cancel">Cancel Client Event</option>
+              <option value="requestAddOns">Request Add-On Services</option>
+              <option value="updateAddOn">Update Add-On Services</option>
+              <option value="createClient">Create New Client Account</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <div class="actions">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
